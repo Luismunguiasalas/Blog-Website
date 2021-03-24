@@ -1,1 +1,74 @@
+@media(max-width:320px){
+ *{
+  /* border: solid 1px gray; */
+  box-sizing: border-box;
+ }
+ #title {
+  /* margin-bottom: 20px; */
+ }
 
+ #title,
+ .navigation a,
+ .subscribe-btn {
+  display: block;
+  text-align: center;
+  margin: auto;
+ }
+
+ .navigation a,
+ .subscribe-btn {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 5px;
+ }
+
+
+.subscribe-btn {
+ color: coral;
+}
+
+.navigation:hover {
+ background-color: azure;
+}
+
+
+ .outer-grid-container {
+  width: 99%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20%, 70%, 10%;
+  /* grid-column-gap: 0px; */
+  /* grid-row-gap: 10px; */
+  row-gap: 10px;
+  grid-template-areas:
+  "title"
+  "outdoor-card"
+  "anima-card"
+  "tech-card"
+  ;
+ }
+
+ .inner-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3,1fr);
+  /* column-gap: 10px; */
+  row-gap: 20px;
+ }
+
+ .card {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border-bottom: solid 1px gray;
+ }
+ .card p,
+ .card a {
+  /* width: 98%; */
+  /* margin: auto; */
+ }
+ .card img {
+  width: 100%;
+  height: auto;
+ }
+}

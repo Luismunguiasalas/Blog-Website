@@ -9,42 +9,53 @@
  <title>The Blog</title>
 </head>
 <body>
- <div class="grid-container">
+ <div class="outer-grid-container">
+  <!-- header start -->
   <header>
-   <nav>
-    news
-    tech
-    gardening
-    animals
+   <h1 id="title">The Blog</h1>
+
+   <nav class="navigation">
+    <a href="#tech-card">technology</a>
+    <a href="animal-card">animals</a>
+    <a href="outdoor-car">outdoors</a>
    </nav>
-   <button></button>
-  </header>
 
-  <main class="">
+   <!-- <button class="subscribe-btn" src></button> -->
+    <a href="#" target="_blank" class="subscribe-btn">subscribe</a>
 
-   <div class="card latest-blog">
-    <img src="" alt="">
-    <p>image text</p>
-    <button></button>
+  </header> 
+  <!-- header end -->
+
+  <!-- main start -->
+  <main class="inner-grid-container">
+
+   <div class="card latest-blog" id="outdoor-card">
+    <img src="./images/outdoor.jpeg" alt="">
+    <p>The great outdoors. 3 crative ways to help you identify flowers and plants. Every seen an owl in the woods? They don't like the smell of weakness, so don't show any sign of uneasyness. </p>
+    <a href="./blog-post.html">Read more</a>
    </div>
-
-   <div class="card">
-    <img src="" alt="">
-    <p>image text</p>
-    <button></button>
+   <!-- <hr> -->
+   <!-- <br> -->
+   <div class="card" id="animal-card">
+    <img src="./images/animals.jpeg" alt="">
+    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <a href="#">Read more</a>
    </div>
-
-   <div class="card">
-    <img src="" alt="">
-    <p>image text</p>
-    <button></button>
+   <!-- <vr> -->
+   <div class="card" id="tech-card">
+    <img src="./images/tech.jpeg" alt="tech">
+    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <a href="#">Read more</a>
    </div>
 
   </main>
+  <!-- main end -->
 
+  <!-- footer start -->
   <footer>
    <p>footer information, copy right information</p>
   </footer>
+  <!-- footer end -->
  </div>
  
 </body>
